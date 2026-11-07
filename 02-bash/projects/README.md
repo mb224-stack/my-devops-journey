@@ -50,3 +50,44 @@ bash backup.sh
 - Add error checking.
 - Support configurable backup locations.
 
+
+
+
+
+
+
+
+
+
+
+## Project 2: File Checker
+
+**File:** `check_hero.sh`
+
+### Purpose
+This script checks whether a file called `hero.txt` exists.
+
+### How It Works
+1. Uses an if/else statement to check for a file.
+2. If the file exists, displays "Hero found!"
+3. Otherwise, displays "Hero missing!"
+
+### Commands and Concepts
+- `if/else` — Makes decisions based on conditions.
+- `-f` — Checks whether a regular file exists.
+- `echo` — Displays a message.
+- `fi` — Ends the if statement.
+
+### How to Run
+Run the script from the directory you want to check:
+
+```bash
+bash check_hero.sh
+```
+
+### What I Learned
+- How to use conditions in Bash.
+- How to check whether files exist.
+- How to make scripts respond to different situations.
+
+
