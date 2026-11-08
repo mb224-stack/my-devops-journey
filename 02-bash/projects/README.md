@@ -91,3 +91,69 @@ bash check_hero.sh
 - How to make scripts respond to different situations.
 
 
+
+## Project 3: Directory Monitoring Script
+
+**File:** `monitor.sh`
+
+### Purpose
+
+This Bash script monitors a directory for file changes.
+
+It detects when files are:
+- Created
+- Modified
+- Deleted
+
+This is useful in DevOps because monitoring helps identify changes happening on servers.
+
+### How It Works
+
+1. Selects the directory to monitor.
+2. Creates temporary files using `mktemp`.
+3. Uses `find` to identify files.
+4. Uses `sha256sum` to help detect modifications.
+5. Uses a `while` loop to check every 5 seconds.
+6. Uses `awk` to compare previous and current file information.
+7. Records changes in `changes.log`.
+8. Uses `trap` to clean up temporary files when the script exits.
+
+### Commands and Concepts Learned
+
+- `while true` — Repeats continuously.
+- `sleep 5` — Waits 5 seconds between checks.
+- `find` — Searches for files.
+- `sha256sum` — Calculates file hashes.
+- `awk` — Processes and compares data.
+- `tee` — Displays output and writes it to a file.
+- `mktemp` — Creates temporary files.
+- `trap` — Runs cleanup commands when the script exits.
+- `date` — Provides timestamps.
+
+### How to Run
+
+From the directory you want to monitor:
+
+```bash
+bash /path/to/monitor.sh
+```
+
+Press `Ctrl + C` to stop monitoring.
+
+### What I Learned
+
+This Bash Battle Arena challenge helped me understand:
+
+1. How to automate file monitoring.
+2. How to use loops for repeated checks.
+3. How to detect file changes using hashes.
+4. How to write information to log files.
+5. How to combine multiple Linux commands in one script.
+
+### Future Improvements
+
+- Allow users to choose a monitoring directory.
+- Add better error handling.
+- Send alerts when important files change.
+- Make the monitoring interval configurable.
+
