@@ -1,4 +1,4 @@
-# 02 - Bash Scripting
+ø# 02 - Bash Scripting
 
 Automate everything. Bash scripting turns repetitive tasks into one-click solutions.
 
